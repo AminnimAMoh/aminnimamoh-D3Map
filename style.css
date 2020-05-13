@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: #191d1f;
+}
+
+@font-face {
+  font-family: "imported-Azo";
+  src: url("Fonts/Azo/AzoSansLight.otf");
+}
+
+@font-face {
+  font-family: "imported-Azo-Medium";
+  src: url("Fonts/Azo/AzoSansMedium.otf");
+}
+
+@font-face {
+  font-family: "imported-Azo-Bold";
+  src: url("Fonts/Azo/AzoSansBold.otf");
+}
+
+h1 {
+  font-family: "imported-Azo-Bold";
+}
+
+h2, h3 {
+  font-family: "imported-Azo-Medium";
+}
+
+p {
+  font-family: "imported-Azo";
+}
+
+.info {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  max-width: 40%;
+  height: 100%;
+  z-index: -1;
+  padding: 5px;
+  overflow-y: scroll;
+  background-color: #bfccdf;
+}
+
+.info img {
+  width: 100%;
+}
+
+.info-content {
+  margin: 25px;
+  color: #191d1f;
+  margin-top: 75px;
+}
+
+.info-content a {
+  text-decoration: none;
+}
+
+.info-content h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.UNI-discription {
+  margin-top: -10px;
+  padding: 0 55px 0 55px;
+  text-align: center;
+}
+
+.paragraph-container {
+  margin-top: 75px;
+  padding: 0 55px 0 55px;
+}
+
+#PhotoGride {
+  position: relative;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 5px;
+}
+
+#PhotoGride img {
+  width: 100%;
+}
+
+text {
+  font-family: imported-Azo;
+}
+
+#Script-Container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  height: 1000px;
+  padding: 25px;
+}
+
+path {
+  fill: #bfccdf;
+  stroke: #bfccdf;
+  stroke-width: .5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+}
+
+circle {
+  fill: #6699cc;
+  fill-opacity: .9;
+  stroke-width: none;
+  opacity: 1;
+  /* r: 3; */
+  z-index: -1;
+  transition: .5s;
+}
+
+path.active {
+  fill: pink;
+}
+
+circle.active {
+  fill: blue;
+  r: 10;
+}
+
+circle.clicked {
+  fill: #cd1d27;
+  opacity: 1;
+  r: 10;
+}
+
+.ellipseCan {
+  width: 100px;
+  height: 100px;
+  stroke-width: .3;
+  /* fill: #6699cc; */
+  opacity: .9;
+}
+
+.year-container text {
+  cursor: pointer;
+  fill: white;
+}
+
+.year-container text.active {
+  fill: #cd1d27;
+}
+
+.node text {
+  display: none;
+  font: 10px sans-serif;
+}
+
+.node:hover text {
+  display: inline;
+}

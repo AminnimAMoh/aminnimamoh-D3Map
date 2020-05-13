@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rain Fall D3</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
+	<script src="https://unpkg.com/d3-composite-projections@1.2.0/d3-composite-projections.min.js"></script>
+	<script src="https://d3js.org/d3-ease.v1.min.js"></script>
+	<script src="radarChart.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+	<div id="Script-Container">
+	</div>
+
+	<div class="info" id="info">
+		<div id="topick" style="margin: 25px;">
+			<h1>Visualising Rainfall Data to Enhance Bangladesh’s Capacity for Risk Reduction in City Planning</h1>
+			<h3>Collaboration Team:</h3>
+			<p>Maya Okada-Zalewski, Mohammad Amin Mohammadi, Heath McGregor</p>
+			<p>The focus of this research is on Bangladesh and the severity of their natural disasters. This involves two main sets of data, natural disaster levels and population which would be displayed
+				according to each
+				district.
+				We collected data of Bangladesh’s monthly rainfall data from 1948-2014. Experimenting with ways to visualise it, we have plotted the data on a map and animated the visualisation according to its data. The images below show the first four
+				iterations to achieve a better understanding of the best way to visualize the main factors.
+			</p>
+		</div>
+
+		<div id="PhotoGride">
+			<img src="Assets/e-1.0.JPG" alt="image">
+			<img src="Assets/e-1.gif" alt="image">
+			<img src="Assets/e-2.gif" alt="image">
+			<img src="Assets/e-3.gif" alt="image">
+		</div>
+		<div id="topick" style="margin: 25px;">
+			<p>Finding additional data based off stations, we added that to the colour-coded map. Not being satisfied with the clarity of the data based off the first example, we have coded different variations of how the data is
+				displayed. The main goal was to provide a way to link the visualisation to the data, to look like rain. Another aspect we wanted to include was the population of civilians within each district to compare patterns of each
+				districts extreme rainfall to migration between districts and also discover which areas are safer to live in than others. We displayed the population using bar charts. Having limited data, we decided to scrap the data
+				from
+				the stations and focus on the rainfall data.</p>
+		</div>
+
+		<div id="PhotoGride" style="margin-left:10%">
+		</div>
+		<div id="topick" style="margin: 25px;">
+			<p>To brighten up the visualisation, we have changed the colours of the map. Instead of putting the data onto the map, we have added a side panel where the data will be displayed. The data displayed on the sides is the monthly rainfall of the
+				selected city alongside the population. We searched for population data of each city in Bangladesh to be able to compare yearly national migration within each city but we were only limited to three years of data. To adapt to this, we have
+				placed each years population next to each other with data from each city to be able to give a side-by-side comparison. The population displays each cities population in grey alongside the selected city which is in red .</p>
+			<p>We have made some stylistic adjustments as well as added some more data. We have placed the city name on top of the graph/data to make it clearer on what city the data is on. We have also added the total rainfall of the years we have of
+				the
+				population data to try and use it as a point of reference to the increase/decrease of the total slum population within that city. Also the slum population was added as we noticed that it adds another dimension of information in terms of how
+				heavy rainfall affects not only the general population but slum rates as well. Since the data was also limited, we used 6 sets of data which lie in between the total population dates.</p>
+
+		</div>
+		<div id="PhotoGride" style="margin-left:10%">
+		</div>
+		<div id="topick" style="margin: 25px;">
+			<p>The map is the main interactive aspect of our code. Once the user selects the year from the top of the screen, the map will display animated icons over each city which is according to the rainfall intensity of that year. Once the user
+				selects
+				the city which they are interested in, the animation stops to help the user be drawn to the right side of the screen.
+				The right side of the screen is where all the data is presented. Firstly is a radial chart showing the monthly rainfall of the selected city and its year to present any spikes or patterns which are noticeable in the data.
+				Underneath that comes the population data. With the red line representing the population count of the selected city and the grey representing every other city, we are given a clear distinction of major population differences between each
+				year.
+				Another thing added is the urban population percentage of that city in percentages as it provides more insight of the changing population data we have. By having 6 sets of data we have more of a scope of information of the fluctuating
+				population rates.
+				We have decided to add the total rainfall relating to the population data which we have to also show any sort relation to the two sets of data.
+			</p>
+			<p>
+				With our visualisation we aimed to provide information on Bangladesh’s extreme weather and how that influences migration between cities over time. Not only does it affect migration but we also hope to highlight how other than economic
+				issues,
+				natural disasters is a major factor to Bangladesh’s slum population and issues. We also hope that this data can help discover any patterns according to the weather and which areas are less prone to extreme rainfall in hopes to solve slum
+				issues
+				and reduce the risk of Bangladeshi people going into slums and poverty.
+			</p>
+			<span style="background-color:#011140"></span>
+		</div>
+
+	</div>
+
+
+	<script src="d3.js">
+
+	</script>
+
+</body>
+
+</html>
