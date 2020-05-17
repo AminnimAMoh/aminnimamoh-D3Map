@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-y: auto;
   overflow-y: hidden;
   background-color: #191d1f;
 }
@@ -26,6 +27,10 @@ h1 {
 
 h2, h3 {
   font-family: "imported-Azo-Medium";
+}
+
+h3 {
+  font-size: 16px;
 }
 
 p {
@@ -70,8 +75,8 @@ p {
 }
 
 .paragraph-container {
-  margin-top: 75px;
-  padding: 0 55px 0 55px;
+  margin-top: 25px;
+  padding: 0 25px 0 25px;
 }
 
 #PhotoGride {
@@ -93,7 +98,7 @@ text {
 #Script-Container {
   box-sizing: border-box;
   position: absolute;
-  top: 100px;
+  top: 60px;
   width: 500px;
   height: 1000px;
   padding: 25px;
