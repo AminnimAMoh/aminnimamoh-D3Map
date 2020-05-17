@@ -161,3 +161,44 @@ circle.clicked {
 .node:hover text {
   display: inline;
 }
+
+.image-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-gap: 15px;
+  grid-auto-rows: 1fr;
+}
+
+.image-grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.image-grid>*:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+/* Just to make the grid visible */
+.image-grid>* {
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* border: 1px white solid; */
+}
+
+.image-grid img {
+  height: 100%;
+}
+
+#refrences {
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-grid {
+    height: 100px;
+  }
