@@ -99,7 +99,7 @@ text {
   box-sizing: border-box;
   position: absolute;
   top: 60px;
-  width: 500px;
+  width: 60%;
   height: 1000px;
   padding: 25px;
 }
@@ -180,13 +180,7 @@ circle.clicked {
 
 .image-grid>*:first-child {
   grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-/* Just to make the grid visible */
-.image-grid>* {
-  /* background: rgba(0, 0, 0, 0.1); */
-  /* border: 1px white solid; */
+  grid-column: 1/1;
 }
 
 .image-grid img {
